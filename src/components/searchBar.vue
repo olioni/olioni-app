@@ -1,0 +1,56 @@
+<template>
+  <div class="main">
+    <div id="searchBar">
+      <textarea id="searchBarText"></textarea>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'searchBar',
+  props: {
+    msg: String
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+
+  * {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #searchBar {
+    width: 80vw;
+    height: 5vh;
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #searchBarText {
+    height: 4vh;
+    width: 75vw;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: inherit;
+    font-size: 20px;
+  }
+
+</style>
