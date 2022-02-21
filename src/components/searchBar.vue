@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div id="searchBar">
-      <textarea id="searchBarText"></textarea>
+      <textarea id="searchBarText" placeholder="Search here..."></textarea>
     </div>
   </div>
 </template>
@@ -17,16 +17,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
   * {
     margin: 0;
-    width: 100vw;
-    height: 100vh;
   }
 
   .main {
     width: 100vw;
-    height: 100vh;
+    height: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,6 +48,9 @@ export default {
     resize: none;
     background-color: inherit;
     font-size: 20px;
+
+    display: flex;
+    align-content: center;
   }
 
 </style>

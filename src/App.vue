@@ -1,22 +1,32 @@
 <template>
   <searchBar/>
+  <cards/>
 </template>
 
 <script>
 import searchBar from './components/searchBar.vue'
+import cards from './components/cards.vue'
 
 export default {
   name: 'App',
   components: {
-    searchBar
+    searchBar,
+    cards
   }
 }
 </script>
 
 <style>
- * {
-   width: 100vw;
-   height: 100vh;
-   margin: 0;
- }
+  * {
+    margin: 0;
+    }
+
+    .main {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
 </style>
