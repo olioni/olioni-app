@@ -1,4 +1,7 @@
 <template>
+  <div id="headerWrap">
+    <h1>PASSION PROJECTS</h1>
+  </div>
   <searchBar/>
   <cards/>
 </template>
@@ -28,5 +31,14 @@ export default {
       justify-content: center;
       align-items: center;
       flex-direction: column;
+    }
+
+    #headerWrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  
+      height: 5vh;
     }
 </style>
