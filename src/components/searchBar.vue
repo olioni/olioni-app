@@ -51,6 +51,9 @@ export default {
 
     display: flex;
     align-content: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
   }
 
 </style>

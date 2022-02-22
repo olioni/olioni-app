@@ -3,8 +3,9 @@
       <div id="cardContainer">
         <div id="cardWrap" v-for="objs in cardsArr" :key="objs">
           <div class="card" :id=objs.id>
-            <h1>{{ objs.name }}</h1>
-            <h3>{{ objs.taiohi }}</h3>
+            <h1 id="projectName">{{ objs.name }}</h1>
+            <h3 id="taiohiName">{{ objs.taiohi }}</h3>
+            <p class="cardBrief">{{ objs.brief }}</p>
           </div>
         </div>
       </div>
@@ -17,24 +18,34 @@ export default {
   props: [],
   data() {
     return {
+      backgroundColor: '',
       cardsArr: [
         {
-          name: "project1",
-          taiohi: "",
+          name: "Passion Project Website",
+          projectImg: "https://static9.depositphotos.com/1594308/1131/i/600/depositphotos_11311945-stock-photo-new-project.jpg",
+          taiohi: "Olioni",
+          brief: "A website dedicated to displaying the various Passion Projects in Tu Toa",
           id: "1"
         },
         {
           name: "project2",
+          projectImg: "",
           taiohi: "",
+          brief: "",
           id: "2"
         },
         {
           name: "project3",
+          projectImg: "",
           taiohi: "",
+          brief: "",
           id:"3"
         }
       ]
     }
+  },
+  methods: {
+    
   }
 }
 </script>
@@ -78,6 +89,11 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+  }
+
+  #taiohiName {
+    font-style: italic;
   }
 
   .card:hover {
@@ -86,6 +102,10 @@ export default {
     font-size: 20px;
 
     cursor: pointer;
+  }
+
+  #cardBrief {
+    overflow: hidden;
   }
 
 </style>

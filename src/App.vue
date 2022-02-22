@@ -37,8 +37,9 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
-      
+      text-align: center;
   
-      height: 5vh;
+      height: 7vh;
+      width: 100vw;
     }
 </style>
