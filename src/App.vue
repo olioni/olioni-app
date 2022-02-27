@@ -1,10 +1,10 @@
 <template>
   <div id="headerWrap" v-if="header">
-    <h1>PASSION PROJECTS</h1>
+    <h1 id="header">PASSION PROJECTS</h1>
   </div>
   <searchBar v-if="showSearchBar"/>
   <cards v-if="showCards" @taiohiObject="displayDashboard"/>
-  <projectDashboard v-if="showDashboard" :taiohiObj="this.taiohiObj"/>
+  <projectDashboard v-if="showDashboard" :taiohiObj="this.taiohiObj" @returnToCards="returnToCards"/>
 </template>
 
 <script>
@@ -37,12 +37,20 @@ export default {
       this.header = false
       this.showSearchBar = false
       this.showCards = false
+    },
+    returnToCards() {
+      this.showDashboard = false
+      this.header = true
+      this.showSearchBar = true
+      this.showCards = true
     }
   }
 }
 </script>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
   * {
     margin: 0;
     }
@@ -62,7 +70,12 @@ export default {
       align-items: center;
       text-align: center;
   
-      height: 7vh;
+      height: 10vh;
       width: 100vw;
+    }
+
+    #header {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 50px;
     }
 </style>
