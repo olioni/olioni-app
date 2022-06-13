@@ -2,28 +2,10 @@
   <div class="main">
     <div id="insideWrap">
       <div id="projectTitleWrap">
-        <h1 id="taiohiProjectTitle"> {{ taiohiObj.taiohi.toUpperCase() + "'S PASSION" }}</h1>
+        <h1 id="taiohiProjectTitle"> {{ taiohiObj.taiohi.toUpperCase() + "'S PASSION PROJECT" }}</h1>
       </div>
       <div id="rowWrap">
         <div class="rowWrapChild" id="projectImages">
-          <div class="projectImagesWrap topWrap">
-            <div id="topPhotosColumnWrap" class="projectImagesRows">
-              <div class="photo1" :style="{boxShadow: shadow}"></div>
-              <div class="photo2" :style="{boxShadow: shadow}"></div>
-            </div>
-            <div id="topBigPhotoWrap" class="projectImagesRows">
-              <div class="photo3" :style="{boxShadow: shadow}"></div>
-            </div>
-          </div>
-          <div class="projectImagesWrap bottomWrap">
-            <div id="bottomBigPhotoWrap" class="projectImagesRows">
-              <div class="photo3" :style="{boxShadow: shadow}"></div>
-            </div>
-            <div id="bottomPhotosColumnWrap" class="projectImagesRows">
-              <div class="photo1" :style="{boxShadow: shadow}"></div>
-              <div class="photo2" :style="{boxShadow: shadow}"></div>
-            </div>
-          </div>
         </div>
         <div class="rowWrapChild" id="projectInfoWrap">
           <h3 class="projectInfo">MY PASSION PROJECT IS:</h3>
