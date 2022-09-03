@@ -1,0 +1,27 @@
+Components Required:
+- cards_dashboard.vue
+- project_dashboard.vue
+- create_card_form.vue
+- edit_card_form.vue
+
+cards_dashboard.vue: 
+=> Contains the cards of the dashboard
+
+project_dashboard.vue:
+=> Contains the project page of the card
+
+create_card_form.vue:
+=> Containes the popup to create a card
+
+edit_card_form.vue:
+=> Contains the popup to edit a card
+
+MAKE SURE TO:
+==================================
+=> Comment on all HTML, CSS AND JS in ALL components
+
+IN APP.vue:
+==================================
+Names For Functions:
+show-create-card-form() <=> showCreateCardForm() --> This is the function which will display the 'Create A Card' form
+show-edit-card-form() <=> showEditCardForm() --> This is the function which will display the 'Edit A Card' form
